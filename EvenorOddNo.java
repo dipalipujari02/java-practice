@@ -1,10 +1,17 @@
+import java.util.Scanner;
+
 public class EvenorOddNo{
     public static void main(String[] args){
-        int i = 4;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number"); 
+        int i = sc.nextInt();
+        sc.close();
+
         if(i%2==0){
-            System.out.println("number is even " +i);
-        }else{
-            System.out.println("number is odd"+i);
+            System.out.println(i + "  is a even number  ");
+        }
+        else{
+            System.out.println(i +  "  is a odd number ");
         }
     }
 }
